@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: white;
+    /* position: fixed; */
+    position: absolute;
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+    font-size: large;
+
+
+}
+
+a,
+button {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(107, 105, 105);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+button {
+    background-color: rgb(201, 148, 148);
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: black;
+
+}
+
+nav li a:hover {
+    color: red;
+}
+
+button:hover {
+    background-color: whitesmoke;
+}
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(doc.png); */
+    background-image: url(home1.avif);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.h-txt {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+}
+
+.h-txt p {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<About Section>>>>>>>>>>>>>>>>>>>>> */
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.row {
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.image-sec {
+    width: 30%;
+    float: left;
+}
+
+.image-sec img {
+    width: 100%;
+    height: auto;
+    margin-top: 50%;
+    border-radius: 20px;
+}
+
+.content {
+    width: 65%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.content h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    color: black;
+}
+
+.content p {
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 10px;
+    line-height: 2;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<< project section >>>>>>>>>>>> */
+
+.card-container {
+    width: 85%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card {
+    flex: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.card:hover {
+    background-color: bisque;
+}
+
+.card h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: rgb(218, 87, 87);
+}
+
+.card p {
+    /* color: green; */
+    font-size: 17px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 25px;
+    color: blue;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-color: rgb(191, 215, 230);
+}
+
+/* <<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>> */
+
+.contact-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: white; */
+    background-image: url(cards.jpg);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(179, 176, 176);
+    color: #333;
+}
+
+form input:focus,
+form textarea:focus {
+    /* outline: none; */
+    box-shadow: 0 0 5px blue;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>> */
+
+footer {
+    background-color: white;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.footer-container p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 25px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(235, 235, 241);
+    margin: 10px;
+    border-radius: 50%;
+}
